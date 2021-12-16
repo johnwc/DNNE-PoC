@@ -4,8 +4,9 @@
     <TargetFramework>net5.0</TargetFramework>
 	<EnableDynamicLoading>true</EnableDynamicLoading>
 	<Platforms>x64</Platforms>
-	  <!--<DnneRuntimeIdentifier>linux-x64</DnneRuntimeIdentifier>-->
-	  <DnneAdditionalIncludeDirectories>/usr/include/kea;</DnneAdditionalIncludeDirectories>
+	<!--<DnneRuntimeIdentifier>linux-x64</DnneRuntimeIdentifier>-->
+	<DnneAdditionalIncludeDirectories>/usr/include/kea;</DnneAdditionalIncludeDirectories>
+	<DnneCompilerCommand>g++</DnneCompilerCommand>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
