@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+	<EnableDynamicLoading>true</EnableDynamicLoading>
+	<Platforms>x64</Platforms>
+	  <!--<DnneRuntimeIdentifier>linux-x64</DnneRuntimeIdentifier>-->
+	  <DnneAdditionalIncludeDirectories>/usr/include/kea;</DnneAdditionalIncludeDirectories>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="DNNE" Version="1.0.27" />
+  </ItemGroup>
+
+</Project>
